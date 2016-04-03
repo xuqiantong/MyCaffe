@@ -306,7 +306,7 @@ message ParamSpec {
 // NOTE
 // Update the next available ID when you add a new LayerParameter field.
 //
-// LayerParameter next available layer-specific ID: 145 (last added: crop_param)
+// LayerParameter next available layer-specific ID: 146 (last added: triplet_param)
 message LayerParameter {
   optional string name = 1; // the layer name
   optional string type = 2; // the layer type
@@ -346,6 +346,9 @@ message LayerParameter {
 
   // Parameters shared by loss layers.
   optional LossParameter loss_param = 101;
+
+  // Parameters for TripletLossLayer
+  optional TripletLossParameter triplet_loss_param = 146;
 
   // Layer type-specific parameters.
   //
@@ -687,6 +690,12 @@ message EltwiseParameter {
   // of computing the gradient for the PROD operation. (No effect for SUM op.)
   optional bool stable_prod_grad = 3 [default = true];
 }
+
+message TripletLossParameter {  
+     // margin for dissimilar pair  
+    optional float margin = 1 [default = 1.0];   
+}  
+
 
 // Message that stores parameters used by ELULayer
 message ELUParameter {

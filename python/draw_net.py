@@ -27,7 +27,7 @@ def parse_args():
                               'valid dot option; see '
                               'http://www.graphviz.org/doc/info/'
                               'attrs.html#k:rankdir'),
-                        default='LR')
+                        default='TB')
 
     args = parser.parse_args()
     return args
