@@ -4,16 +4,13 @@ import numpy as np
 from random import randint
 import random
 
-src = open('label.txt')
 dic = {}
 dic_test = {}
 dic_train = {}
 test_samples = [0]*250
 
 #read & seperate data
-des1 = open('exp/v4/test_a_class.txt', "w")
-des2 = open('exp/v4/test_p_color.txt', "w")
-des3 = open('exp/v4/test_n_weight.txt', "w")
+src = open('label.txt')
 
 lines = src.readlines()
 for i,l in enumerate(lines):
@@ -35,6 +32,10 @@ for k,v in dic.items():
 
 # for triplet net
 # test data 
+des1 = open('exp/v4/test_a_class.txt', "w")
+des2 = open('exp/v4/test_p_color.txt', "w")
+des3 = open('exp/v4/test_n_weight.txt', "w")
+
 test_list = [k for k, v in dic_test.items()]
 test_nb = {}
 
@@ -48,7 +49,6 @@ l = len(test_list)
 w1 = []
 w2 = []
 w3 = []
-
 
 for anchor in test_list:
     model = dic_test[anchor][1]
