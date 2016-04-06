@@ -184,11 +184,11 @@ print('mean average precision is %.2f' % (mean_average_precision))
 print('mean query time is %.2f s' % mean_query_time)
 
 # save precision@k
-with open('/home/xqt/essence/V4_fc7_3_precision_at_k.txt', 'w') as f:
+with open('/home/xqt/essence/V0_fc7_3_precision_at_k.txt', 'w') as f:
     for i in range(args.nn_number):
         f.write('%f\n' % (precsion_at_k[i]/query_num))
 
-with open('/home/xqt/essence/V4_fc7_3_map.txt', 'w') as f:
+with open('/home/xqt/essence/V0_fc7_3_map.txt', 'w') as f:
     f.write('map=%f, mean_query_time=%f' % (mean_average_precision, mean_query_time))
 
 #query_img = cv2.imread(img_path)
