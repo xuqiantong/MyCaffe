@@ -4,10 +4,10 @@ python brute_force.py \
     --query_list /home/xqt/demo/retrieval_test/query_3.txt \
     --siyang_label /media/megatron-home/dwliang/search_eval/query/cropped_label/ \
     --nn_number 1000 \
-    --net_def /home/xqt/exp/deploy_multi_v0.prototxt \
-    --weights /home/xqt/exp_res/v0_iter_34589.caffemodel \
+    --net_def /home/xqt/exp/deploy_multi_v4.prototxt \
+    --weights /home/xqt/exp_res/_v4_iter_14897.caffemodel \
     --feat fc7 \
     --begin_loc 1 \
     --end_loc 2049 \
-    --siyang_feat /home/xqt/features/v0_siyang_fc7.fea \
-    --wendeng_feat /home/xqt/features/v0_wendeng_fc7.fea
+    --siyang_feat /home/xqt/features/_v4_siyang_fc7.fea \
+    --wendeng_feat /home/xqt/features/_v4_wendeng_fc7.fea
