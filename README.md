@@ -2,7 +2,7 @@ For each query group Q and each group D_{i} in database.
 
 Min:		 	
 
-		I_{Q} = argmin_{i}\{d(q_j,d_{ik})~|~ q_j \in Q, d_{ik} \in D_i, i \in [1, ..., N]\}.
+		$I_{Q} = argmin_{i}\{d(q_j,d_{ik})~|~ q_j \in Q, d_{ik} \in D_i, i \in [1, ..., N]\}$.
 
 Vote: 				
 
