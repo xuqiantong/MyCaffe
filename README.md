@@ -20,7 +20,7 @@ and step-by-step examples.
 Please join the [caffe-users group](https://groups.google.com/forum/#!forum/caffe-users) or [gitter chat](https://gitter.im/BVLC/caffe) to ask questions and talk about methods and models.
 Framework development discussions and thorough bug reports are collected on [Issues](https://github.com/BVLC/caffe/issues).
 
-Happy brewing!
+Happy brewing! Yea, indeed, I was happy.
 
 ## License and Citation
 
